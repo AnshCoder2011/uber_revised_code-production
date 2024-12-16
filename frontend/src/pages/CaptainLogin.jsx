@@ -32,7 +32,6 @@ const CaptainLogin = () => {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       })
       .then((response) => response.data);
-    console.log(captainData);
     setEmail("");
     setPassword("");
   };
